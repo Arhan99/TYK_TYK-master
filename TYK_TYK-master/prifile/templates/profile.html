@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Регистрация {% endblock %}
+
+{% block content %}
+<body class="mybody-b">
+    <div class="about">
+        <div class="wrapper">
+            <div class="img"><img src="../static/css/defaultImg_Product.png" alt=""></div>
+            <div class="info">
+                <h1>{{user.username}}</h1>
+                <div class="contacts">
+                    <div class="email">
+                        <p>{{user.email}}</p>
+                    </div>
+                    <div class="number">
+                        <p>88005553535</p>
+                    </div>
+                    <p class="">Я еблан</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

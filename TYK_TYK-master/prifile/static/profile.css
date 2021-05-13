@@ -1,0 +1,30 @@
+* {
+padding: 0;
+margin: 0;
+}
+.wrapper {
+display: flex;
+align-items: center;
+margin-left: 13.4%;
+margin-right: 13.4%;
+justify-content: space-around;
+width: 100%;
+color: white;
+}
+.about {
+display: flex;
+padding-top: 150px;
+}
+.about h1{
+text-transform: uppercase;
+}
+.about .info {
+margin-left: 50px;
+}
+.about .info .contacts {
+margin-top: 70px;
+}
+.about .info .contacts .number {
+margin-top: 5px;
+margin-bottom: 25px;
+}

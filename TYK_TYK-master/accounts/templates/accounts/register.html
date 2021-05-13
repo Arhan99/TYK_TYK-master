@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Регистрация {% endblock %}
+
+{% block content %}
+    <body class="mybody-b">
+    <div class="row ">
+        <div class="Registration_main__2epBH">
+{#            <h4 class="my-2">Регистрация нового пользователя</h4>#}
+            <form method="POST" action="">{% csrf_token %}
+{#                <div class="form-group">#}
+{#                    <div class="Registration_login__2AvmS">{{ form.as_p }}</div>#}
+{#                </div>#}
+                <div class="Registration_main__2epBH">
+                                <div class="Registration_login__2AvmS">
+                                    <p>Логин</p>
+                                    {{ form.username }}
+                                    <div>{{ form.username.errors}}</div>
+                                </div>
+                    <div class="Registration_login__2AvmS">
+                        <p>Почта</p>
+                        {{ form.email }}
+                        <div>{{ form.username.errors}}</div>
+                    </div>
+                                <div class="Registration_login__2AvmS">
+                                    <p>Фамилия</p>
+                                    {{ form.last_name }}
+                                    <div>{{ form.last_name.errors}}</div>
+                                </div>
+                                <div class="Registration_login__2AvmS">
+                                    <p>Имя</p>
+                                    {{ form.first_name }}
+                                    <div>{{ form.first_name.errors}}</div>
+                                </div>
+                                <div class="Registration_field__GURFO">
+                                    <p>Пароль</p>
+                                    {{ form.password }}
+                                    <div>{{ form.password.errors}}</div>
+                                </div>
+                                <div class="Registration_field__GURFO">
+                                    <p>Повторите пароль</p>
+                                    {{ form.password2 }}
+                                    <div>{{ form.password2.errors}}</div>
+                                </div>
+                                <button type="submit" class="">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+{% endblock %}

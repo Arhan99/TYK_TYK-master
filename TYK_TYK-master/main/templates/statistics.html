@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Статистика {% endblock %}
+
+{% block content %}
+
+            <div class="statistics-main">
+                <div class="my_content-stat">
+                <div class="statistics">Пользователи на сайте: {{ count_users  }}</div><!--gender_neighb-->
+                <div class="statistics">Сколько людей нашли друг друга  : {{ all_likes_n }}</div><!--sel_city-->
+                <div class="statistics">Сколько бизнесменов нашли друг друга : {{ all_likes_bus }}</div><!--sel_distr-->
+                </div>
+        </div>
+
+
+{% endblock %}
